@@ -45,6 +45,21 @@ nav ul li a{
     margin-right: 20px;
 }
 
+nav ul li a::before{
+    display: block;
+    content: '';
+    width: 0%;
+    background-color: #6d7b93;
+    height: 5px;
+    top: 0;
+    position: absolute;
+    transition: width 0.2s;
+}
+
+nav ul li a:hover::before{
+    width: 100%;
+}
+
 .menu h1{
     float: left;
     margin-left: 00px;
@@ -125,7 +140,7 @@ nav ul li a{
 }
 
 .formulario1 input[type="text"],
-input[type="password"]{
+input[type="password"], input[type="email"]{
     font-size: 20px;
     width: 82%;
     padding: 10px;
@@ -167,4 +182,42 @@ input[type="password"]{
 
 .formulario2 p{
     text-align: center;
+}
+
+/*Pagina fomrulario*/
+
+.titulo{
+    margin-left: 80px;
+    margin-right: 80px;
+    box-shadow: 1px 5px 25px #00BBF9;
+}
+
+.titulo h1{
+    font-size: 50px;
+}
+
+.titulo p{
+    font-size: 30px;
+}
+
+.form{
+    margin-left: 60px;
+    background: #fff;
+    margin-top: 10px;
+    padding: 3px;
+    float: left;
+    box-shadow: 1px 5px 25px rgba(0, 0, 0, 0.363);
+    font-size: 30px;
+    width: 1000px;
+}
+
+.form input, textarea{
+    font-size: 20px;
+    width: 82%;
+    padding: 10px;
+    border: none;
+}
+
+.form input[type="submit"]{
+    margin-left: 80px;
 }
