@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Perfiles</title>
+</head>
+<body>
+
+    <header>
+        <div class="menu">
+            <img class="logo" src="./image/logo.png" alt="Logo pasteleria" >
+            <h1 style="font-family: Arial, Helvetica, sans-serif; color: #2e4ecc;">Abogabot</h1>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Menu</a></li>
+                    <li><a href="./Formulario.html">Formulario</a></li>
+                    <li><a href="./abogados.html">Abogados</a></li>
+                    <li><a href="./registrarvista.html" style="color: red;">Log In</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="back">
+        <div id="app">
+            <img src="./image/profile-pic.jpeg" alt="profile" >
+            <a href="editarPerfil.html">Editar perfil</a>
+
+            <h1 >{{nombre}} {{apellido}}</h1>
+            <h3>Email: {{email}}</h3>
+            <h3>Telefono: {{telefono}}</h3>
+            <h3>Ciudad: {{ciudad}}</h3>
+            <h3>Fecha de nacimiento: {{fechaNac}}</h3>
+        </div>
+    </section>
+        
+    <div class="opcion-usuario">
+        <button>Revisar demandas</button>
+        <a href="./Formulario.html">
+            <button>Hacer demanda</button>
+        </a>
+        
+    </div>
+    
+
+    
+    
+    
+</body>
+</html>
