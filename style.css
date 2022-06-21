@@ -49,7 +49,7 @@ nav ul li a::before{
     display: block;
     content: '';
     width: 0%;
-    background-color: #6d7b93;
+    background-color: #2e4ecc;
     height: 5px;
     top: 0;
     position: absolute;
@@ -220,4 +220,96 @@ input[type="password"]{
 
 .form input[type="submit"]{
     margin-left: 80px;
+}
+
+/*Informacion*/
+
+.informacion{
+    display: table;
+    position: relative;
+}
+
+.info{
+    width: 390px;
+    height: 300px;
+    margin-left: 50px;
+    font-family: 'calibri';
+    color: #6d7b93;
+    font-size: 20px;
+    padding: 10px;
+    float: left;
+}
+
+.info:hover{
+    box-shadow: 1px 5px 25px rgba(0, 0, 0, 0.363);
+}
+
+/*Pagina de perfiles*/
+
+.back {
+    background-color: #F4FFFD;
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+#app {
+    width: 400px;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#app h1,
+h3 {
+    margin-bottom: 1rem;
+    font-weight: normal;
+}
+
+#app img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px #333 solid;
+    margin-bottom: 1rem;
+}
+
+button {
+    cursor: pointer;
+    display: inline-block;
+    background: #333;
+    color: white;
+    font-size: 18px;
+    border: 0;
+    padding: 1rem 1.5rem;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    transform: scale(0.98);
+}
+
+.opcion-usuario {
+    padding-top: 20px;
+    width: 600px;
+    margin: auto;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 10px;
+}
+
+.opcion-usuario button {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: 1px solid;
+    color: #F4FFFD;
 }
